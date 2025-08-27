@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: Noto Sans;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9d8fd;
+}
+.NavBarContainer {
+    background-color: #5A4EF5;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.LogoNavbar {
+    width: 60px;
+    padding: 0px 8px;
+    background-color: #6200F5;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.LogoNavbar:hover, .NavbarLinks a:hover {
+    filter: brightness(120%);
+    transition: linear 300ms;
+}
+.NavbarLinks {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Noto Sans";
+    font-weight: 600;
+    padding: 0px;
+    margin: 10px;
+}
+.NavbarLinks a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #d9d8fd;
+}
+main {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.FormTitle h1 {
+    font-size: 25pt;
+    font-family: "Noto Sans";
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 600
+}
+.FormCardContainer {
+    background-color: #5A4EF5;
+    width: 500px;
+    padding: 50px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.FormItemsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 10px;
+}
+#FormIconDinamic {
+    color: #FCFDD8;
+    margin-right: 4px;
+}
+.FormItemsContainer label {
+    color: #FCFDD8;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5px;
+    user-select: none;
+}
+.FormItemsContainer input {
+    outline: none;
+    border: none;
+    background-color: #FCFDD8;
+    padding: 4px;
+    width: 400px;
+    height: 20px;
+    border-radius: 8px;
+    font-family: "Noto Sans";
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-size: 13px;
+}
+.FormItemsContainer input::placeholder {
+    opacity: 50%;
+    font-size: 11px;
+}
+.FormItemProfileContainer {
+    padding: 5px 15px;
+    align-items: center;
+}
+.FormItemProfileTitle {
+    display: flex;
+}
+.FormItemProfileContainer label {
+    color: #d9d8fd;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    margin-top: 2px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.FormItemProfileContainer input[type="file"] {
+    color: #d9d8fd;
+}
+.FormItemProfileContainer input[type="file"]::file-selector-button {
+    background-color: #9db7fa;
+    border: none;
+    border-radius: 10px;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    color: #110720;
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.FormItemProfileContainer input[type="file"]::file-selector-button:hover {
+    filter: brightness(120%);
+    transition: linear 400ms;
+    box-shadow: 0px 2px 3px #6e89cc;
+}
+.FormSubmitBtnContainer {
+    padding: 10px 5px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FormSubmitBtnContainer input {
+    background-color: #9db7fa;
+    border: none;
+    border-radius: 12px;
+    color: #110720;
+    letter-spacing: 0.05rem;
+    font-family: "Noto Sans";
+    font-weight: 600;
+    margin: 0px;
+    padding: 10px 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.FormSubmitBtnContainer input:hover {
+    filter: brightness(120%);
+    transition: linear 400ms;
+    box-shadow: 0px 2px 3px #6e89cc;
+}
+.Rodapé {
+    background-color: #6200F5;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: auto;
+}
+@keyframes girarLogo {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+#FooterLogo {
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    user-select: none;
+    transition: linear 0.8s;
+    animation: girarLogo 8s linear infinite;
+    animation-play-state: running;
+}
+#FooterLogo:hover {
+    filter: brightness(180%);
+    filter: drop-shadow(0px 2px 3px #6e89cc);
+}
+.FooterLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FooterLinksContainer ul,.FooterLinksContainer ul a{
+    display: flex;
+    opacity: 90%;
+    text-decoration: none;
+}
+.FooterLinksContainer ul a:hover {
+    opacity: 100%;
+    text-shadow: 0px 1px 3px #FCFDD8 50%;
+    filter: brightness(220%);
+}
+.FooterLinksContainer span {
+    display: inline-block;
+    width: 2px;    
+    height: 30px;
+    background-color: #d9d8fd;
+    opacity: 90%;
+    margin: 0px 4px;
+    vertical-align: middle;
+}
+.FooterLinksContainer ul li {
+    padding: 0px 20px;
+    margin-top: 5px;
+    font-family: "Noto Sans";
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: #d9d8fd;
+    list-style: none;
+}
+.footer-contact {
+    color: #d9d8fd;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    opacity: 90%;
+}
+.socialsItems {
+    color: #d9d8fd;
+    text-decoration: none;
+}
+.CopyrightDEVELOPER {
+    color: #d9d8fd;
+    text-transform: uppercase;
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 70%;
+    user-select: none;
+    padding: 20px 0px;
+}

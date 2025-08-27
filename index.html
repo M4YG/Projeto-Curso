@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Projeto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <!--BARRA DE NAVEGAÇÃO - CABEÇALHO-->
+        <nav class="NavBarContainer">
+            <!--LOGO DA BARRA DE NAVEGAÇÃO-->
+            <a class="LogoNavbar" href="/">
+                <img src="assets/LogoNav.svg" alt="">
+            </a>
+            <!--LINKS DA BARRA DE NAVEGAÇÃO-->
+            <div class="NavbarLinksContainer">
+                <ul class="NavbarLinks">
+                    <a href="#FormUser">
+                        <li>Formulário</li>
+                    </a>
+                    <a href="#">
+                        <li>Contatos</li>
+                    </a>
+                    <a href="#SobreAba">
+                        <li>Sobre</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Formulário Dinâmico-->
+        <section id="FormUser" data-aos="fade-in" data-aos-delay="1000">
+            <div class="FormTitle">
+                <h1>Formulário</h1>
+            </div>
+            <!--FORMULÁRIO-->
+            <form action="dinamic_form" class="FormCardContainer">
+                <div class="FormItemsContainer">
+                    <!--ICONES FORMULÁRIO-->
+                    <div class="FormItemsIconDinamicContainer">
+                        <svg id="FormIconDinamic" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                          </svg>                          
+                    </div>
+                    <label for="nomeusuario">Nome: </label>
+                    <input type="text" placeholder="Insira seu nome" required id="nomeusuario">
+                </div>
+                <!--ICONES FORMULÁRIO-->
+                <div class="FormItemsContainer">
+                    <div class="FormItemsIconDinamicContainer">
+                        <svg id="FormIconDinamic" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1"/>
+                          </svg>                                                                              
+                    </div>
+                    <label for="emailusuario">Email: </label>
+                    <input type="email" placeholder="Insira seu email" required id="emailusuario">
+                </div>
+                <!--ICONES FORMULÁRIO-->
+                <div class="FormItemsContainer">
+                    <div class="FormItemsIconDinamicContainer">
+                        <svg id="FormIconDinamic" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
+                          </svg>                                                                              
+                    </div>
+                    <label for="senhausuario">Senha: </label>
+                    <input type="password" placeholder="Insira sua senha" required id="senhausuario">
+                </div>
+                <!--SETOR ENVIO IMAGEM USUÁRIO-->
+                <div class="FormItemProfileContainer">
+                    <div class="FormItemProfileTitle">
+                        <i>
+                            <svg id="FormIconDinamic" class="w-[35px] h-[35px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Zm10 5a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Zm-8-5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm1.942 4a3 3 0 0 0-2.847 2.051l-.044.133-.004.012c-.042.126-.055.167-.042.195.006.013.02.023.038.039.032.025.08.064.146.155A1 1 0 0 0 6 17h6a1 1 0 0 0 .811-.415.713.713 0 0 1 .146-.155c.019-.016.031-.026.038-.04.014-.027 0-.068-.042-.194l-.004-.012-.044-.133A3 3 0 0 0 10.059 14H7.942Z" clip-rule="evenodd"/>
+                              </svg>                          
+                        </i>
+                        <label for="">Faça envio de uma imagem para perfil:</label>
+                    </div>
+                    <input type="file" required>
+                </div>
+                <!--BOTÃO DE ENVIO DO FORMULÁRIO-->
+                <div class="FormSubmitBtnContainer">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <!--RODAPÉ-->
+    <footer class="Rodapé" id="SobreAba">
+        <!--LOGO RODAPÉ-->
+        <section class="RodapéContainer">
+            <img id="FooterLogo" src="assets/LogoNav.svg" alt="">
+            <!--LINKS DE NAVEGAÇÃO DO RODAPÉ-->
+            <div class="FooterLinksContainer">
+                <ul>
+                    <a href="/">
+                        <li>Início</li>
+                    </a>
+                    <span class="barra"></span>
+                    <a href="#FormUser">
+                        <li>Formulário</li>
+                    </a>
+                    <span class="barra"></span>
+                    <a href="#">
+                        <li>Contatos</li>
+                    </a>
+                    <span class="barra"></span>
+                    <a href="#">
+                        <li>Sobre</li>
+                    </a>
+                </ul>
+            </div>
+            <!--FORMAS DE CONTATO-->
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>Email: mateusalvess.contato@gmail.com</p>
+                <p>Tel: (88) 99767-3634</p>
+            </div>
+            <!--MEIOS SOCIAIS DO CRIADOR-->
+            <div class="socials">
+                <a class="socialsItems" href="https://github.com/M4YG" target="_blank">
+                    <i class="fab fa-github">
+                        <svg class="w-[35px] h-[35px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+                        </svg>                  
+                    </i>
+                </a>
+                <a class="socialsItems" href="https://www.linkedin.com/in/m4yg" target="_blank">
+                    <i class="fab fa-linkedin">
+                        <svg class="w-[35px] h-[35px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                        </svg>                                   
+                    </i>
+                </a>
+            </div>
+            <!--COPYRIGHT-->
+            <p class="CopyrightDEVELOPER">Desenvolvido por: Mateus Alves</p>
+            </div>
+        </section>
+    </footer>
+    <!--SCRIPTS-->
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
