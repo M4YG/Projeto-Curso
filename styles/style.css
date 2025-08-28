@@ -70,6 +70,9 @@ main {
     color: #FCFDD8;
     margin-right: 4px;
 }
+#FormIconDinamicMobile {
+    display: none;
+ }
 .FormItemsContainer label {
     color: #FCFDD8;
     font-family: "Noto Sans";
@@ -154,6 +157,7 @@ main {
     transition: linear 400ms;
     box-shadow: 0px 2px 3px #6e89cc;
 }
+
 .Rodapé {
     background-color: #6200F5;
     text-align: center;
@@ -217,6 +221,9 @@ main {
     font-size: 14px;
     opacity: 90%;
 }
+.footer-contact p {
+    font-weight: 500;
+}
 .socialsItems {
     color: #d9d8fd;
     text-decoration: none;
@@ -230,4 +237,87 @@ main {
     opacity: 70%;
     user-select: none;
     padding: 20px 0px;
+}
+
+
+/*Mobile*/
+@media (max-width: 600px) { 
+    .LogoNavbar {
+        width: 70px;
+        padding: 0px 15px;
+    }
+    .NavbarLinksContainer {
+        display: none;
+    }
+    .FormCardContainer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .FormItemsIconDinamicContainer {
+        flex-wrap: wrap;
+    }
+    #FormIconDinamic {
+        display: none;
+     }
+    #FormIconDinamicMobile {
+        margin-right: 4px;
+        color: #d9d8fd;
+        display: block;
+    }
+    .FormItemsContainer {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .FormItemsContainer label {
+        font-size: 18px;
+    }
+    .FormItemsContainer input {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Noto Sans";
+        height: 28px;
+        padding: 0px 8px;
+        margin-top: 5px;
+    }
+    .FormItemsContainer input::placeholder {
+        font-size: 15px;
+        opacity: 60%;
+    }
+    .FormItemProfileContainer label {
+        font-size: 18px;
+    }
+    .FormItemProfileContainer input[type="file"]::file-selector-button {
+        padding: 12px;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    .FormSubmitBtnContainer input {
+        padding: 15px 70px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .FooterLinksContainer .barra {
+        display: none;
+    }
+    .FooterLinksContainer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 0px;
+        font-size: 20px;
+    }
+    .FooterLinksContainer ul li {
+        padding: 5px 0px;
+    }
+    .footer-contact {
+        font-size: 17px;
+        font-family: "Noto Sans";
+    }
+    .footer-contact p {
+        font-size: 14px;
+    }
 }
