@@ -45,12 +45,13 @@ main {
     padding: 20px;
     margin-bottom: 50px;
 }
-.FormTitle h1 {
+.FormTitle h1, .FormTitleDados {
     font-size: 25pt;
     font-family: "Noto Sans";
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    font-weight: 600
+    font-weight: 600;
+    user-select: none;
 }
 .FormCardContainer {
     background-color: #5A4EF5;
@@ -92,6 +93,7 @@ main {
     font-family: "Noto Sans";
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     font-size: 13px;
+    font-weight: 500;
 }
 .FormItemsContainer input::placeholder {
     opacity: 50%;
@@ -157,7 +159,37 @@ main {
     transition: linear 400ms;
     box-shadow: 0px 2px 3px #6e89cc;
 }
+.ProfileImageFormContainer {
+    background-color: #5A4EF5;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 15px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#FormImageProfile {
+    width: 100px;
+    border-radius: 85px;
+}
 
+/*Dados*/
+.DadosLabel {
+    font-size: 17px;
+    color: #6200F5;
+    font-family: "Noto Sans";
+    padding: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.DadosInfo {
+    font-size: 16px;
+    color: #110720;
+    font-family: "Noto Sans";
+    font-weight: 600;
+}
+/*RODAPÉ*/
 .Rodapé {
     background-color: #6200F5;
     text-align: center;
